@@ -1,0 +1,2 @@
+make
+./Puissance4
