@@ -22,7 +22,7 @@ int main()
 	choix = atoi(mode);
 
 	if (choix == 1) { /* SOLO MODE */
-		printf("Joue seul(e)!\n");
+		printf("\n\n\tSOLO MODE SELECTED! \n");
 		afficheGrille(Grille);
 		int couleurJoueur;
 		int Partie = 0;
@@ -49,7 +49,7 @@ int main()
 
 	}
 	else {
-		printf("\t MULTIPLAYER GAME\n");
+		printf("\n\n\t MULTIPLAYER MODE SELECTED! \n");
 		afficheGrille(Grille);
 		int couleurJoueur;
 		int Partie = 0;
