@@ -86,6 +86,22 @@ void tour(matrixBool M, int couleurJoueur)
 	}
 }
 
+void tourReseau(matrixBool M, int couleurJoueur, int colonne) 
+{
+	coord coordonnee;
+	coordonnee.x = 0;
+	coordonnee.y = 0;
+	coordonnee = calculCoord(M, colonne, coordonnee);
+
+	M.mat[coordonnee.x][coordonnee.y][0] = 1;
+	if(couleurJoueur == 0) {
+		M.mat[coordonnee.x][coordonnee.y][1] = 0;
+	}
+	else {
+		M.mat[coordonnee.x][coordonnee.y][1] = 1;
+	}
+}
+
 int VerifVertR(matrixBool M, int x, int y)
 {
 	int Bool = 0;

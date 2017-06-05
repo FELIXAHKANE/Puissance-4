@@ -1,4 +1,4 @@
-#include "ia.h"
+#include "Joueur1.h"
 #include <unistd.h>
 
 int main() 
@@ -17,7 +17,7 @@ int main()
 
 	printf("\n\n\n \tQue le jeu commence!! \n\n\n");
 	*/
-	printf("Choisis ton mode de jeu :\n\t1 - Solo (IA)\n\t2 - Multiplayer\n");
+	printf("Choisis ton mode de jeu :\n\t1 - Solo (IA)\n\t2 - Multiplayer\n\t3 - Multiplayer Réseau\n");
 	lireCaractere(mode);
 	choix = atoi(mode);
 
@@ -47,6 +47,11 @@ int main()
 			}
 		}
 
+	}
+	else if (choix == 3) {
+		printf("\t MULTIPLAYER GAME ONLINE\n");
+		afficheGrille(Grille);
+		Joueur1(Grille);
 	}
 	else {
 		printf("\t MULTIPLAYER GAME\n");
