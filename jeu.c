@@ -275,7 +275,7 @@ int CalculPuissance4(matrixBool M)
 					printf("\n\033[37mLES JAUNES GAGNEENT!!!!!!!!!!\n");
 					return 1;
 				}
-				compteur = VerifHorR(M,i,j);
+				compteur = VerifHorJ(M,i,j);
 				if (compteur == 4){
 					printf("\n\033[37mLES JAUNES GAGNEENT!!!!!!!!!!\n");
 					return 1;
